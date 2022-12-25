@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 1440px;
+	margin: 0 auto;
+	background-color: hsl(185, 75%, 39%);
+	background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+
+	background-position: left top, right bottom;
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+	font-family: Kumbh Sans, san-serif;
+	font-size: 18px;
+}
+
+
+main {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.container {
+	width: 400px;
+	height: 400px;
+	background-color: #fff;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
+	align-items: center;
+}
+
+.container img {
+	width: 100%;
+	height: auto;
+	border-radius: 10px 10px 0 0;
+
+}
+
+.avatar {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	background-image: url('images/image-victor.jpg');
+	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%);
+	top: 115px;
+}
+
+hr {
+	width: 100%;
+	background-color: #333;
+	opacity: 0.25;
+	border: none;
+    height: 1px;
+}
+
+.name {
+	margin-top: 70px;
+	font-weight: 700;
+}
+
+.name span {
+	font-weight: 400;
+	color: hsl(0, 0%, 59%);
+}
+
+.location {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 0.85rem;
+	color: hsl(0, 0%, 59%);
+
+}
+
+.container ul {
+	width: 90%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	list-style-type: none;
+	/*gap: 30px;*/
+	text-align: center;
+}
+
+.container ul li p {
+	color: hsl(0, 0%, 59%);
+	font-weight: 400;
+	font-size: 0.7rem;
+	letter-spacing: 1px;
+	padding-top: 5px;
+}
+
+.container ul li {
+	font-weight: 700;
+
+}
+
+@media screen and (max-width: 768px) {
+
+	body {
+	width: 375px;
+	background-position: left top, right bottom;
+	background-size: 300px 300px;
+	}
+
+	.avatar {
+	top: 105px;
+  	left: 50%;
+  	transform: translate(-50%);
+	}
+}
