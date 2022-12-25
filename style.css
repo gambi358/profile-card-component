@@ -11,8 +11,7 @@ body {
 	background-color: hsl(185, 75%, 39%);
 	background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
 
-	background-position: left top, right bottom;
-	background-size: 600px 600px;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
 	background-repeat: no-repeat;
 	font-family: Kumbh Sans, san-serif;
 	font-size: 18px;
@@ -112,8 +111,7 @@ hr {
 
 	body {
 	width: 375px;
-	background-position: left top, right bottom;
-	background-size: 300px 300px;
+
 	}
 
 	.avatar {
